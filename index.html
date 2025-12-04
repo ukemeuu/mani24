@@ -87,7 +87,7 @@
         <section class="py-24 border-t border-neutral-900">
             <div class="mx-auto max-w-7xl px-6">
                 <div class="grid md:grid-cols-2 gap-16 items-start">
-                    <div class="sticky top-32">
+                    <div class="md:sticky md:top-32">
                         <h2 class="reveal-type text-4xl md:text-5xl font-bold leading-tight mb-6">
                             Is your website <br>
                             <span class="text-red-500">losing you money?</span>
@@ -131,80 +131,96 @@
             </div>
         </section>
 
-        <!-- SERVICES (Marquee Style or Grid) -->
-        <section id="services" class="py-32 bg-neutral-950">
+        <!-- SERVICES (Horizontal Scroll) -->
+        <section id="services" class="py-32 bg-neutral-950 overflow-hidden">
             <div class="mx-auto max-w-7xl px-6 mb-16">
                 <p class="fade-up text-xs font-bold uppercase tracking-[0.4em] text-neutral-500 mb-4">Services</p>
                 <h2 class="reveal-type text-4xl md:text-6xl font-bold">Everything you need.</h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-1 px-1">
-                <!-- Service 1 -->
-                <div
-                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
-                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">🌐
+            <!-- Horizontal Scroll Container -->
+            <div class="services-scroll-container relative">
+                <div class="services-track flex gap-6 px-6 md:px-12">
+                    <!-- Service 1 -->
+                    <div
+                        class="service-card flex-shrink-0 w-[85vw] md:w-[450px] h-[500px] bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 rounded-3xl p-8 flex flex-col justify-between group hover:border-neutral-600 transition-all duration-500">
+                        <div>
+                            <div
+                                class="text-6xl mb-6 opacity-30 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                                🌐</div>
+                            <h3 class="text-3xl font-bold mb-4">Custom Websites</h3>
+                            <p class="text-neutral-400 text-base leading-relaxed">No templates. Built for speed, SEO,
+                                and conversion. Integrated with your POS and delivery apps.</p>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 text-sm text-neutral-500 group-hover:text-yellow-400 transition-colors">
+                            <span>Learn more</span>
+                            <span class="group-hover:translate-x-2 transition-transform">→</span>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Custom Websites</h3>
-                        <p class="text-neutral-400 text-sm">No templates. Built for speed, SEO, and conversion.
-                            Integrated with your POS and delivery apps.</p>
+
+                    <!-- Service 2 -->
+                    <div
+                        class="service-card flex-shrink-0 w-[85vw] md:w-[450px] h-[500px] bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 rounded-3xl p-8 flex flex-col justify-between group hover:border-neutral-600 transition-all duration-500">
+                        <div>
+                            <div
+                                class="text-6xl mb-6 opacity-30 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                                📸</div>
+                            <h3 class="text-3xl font-bold mb-4">Food Photography</h3>
+                            <p class="text-neutral-400 text-base leading-relaxed">Mouth-watering content for your site
+                                and socials. We make your food look as good as it tastes.</p>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 text-sm text-neutral-500 group-hover:text-yellow-400 transition-colors">
+                            <span>Learn more</span>
+                            <span class="group-hover:translate-x-2 transition-transform">→</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div
+                        class="service-card flex-shrink-0 w-[85vw] md:w-[450px] h-[500px] bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 rounded-3xl p-8 flex flex-col justify-between group hover:border-neutral-600 transition-all duration-500">
+                        <div>
+                            <div
+                                class="text-6xl mb-6 opacity-30 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                                ⚡</div>
+                            <h3 class="text-3xl font-bold mb-4">Growth Tools</h3>
+                            <p class="text-neutral-400 text-base leading-relaxed">Review automation, QR codes, and
+                                dashboards to track your kitchen's performance.</p>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 text-sm text-neutral-500 group-hover:text-yellow-400 transition-colors">
+                            <span>Learn more</span>
+                            <span class="group-hover:translate-x-2 transition-transform">→</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div
+                        class="service-card flex-shrink-0 w-[85vw] md:w-[450px] h-[500px] bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 rounded-3xl p-8 flex flex-col justify-between group hover:border-neutral-600 transition-all duration-500">
+                        <div>
+                            <div
+                                class="text-6xl mb-6 opacity-30 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                                🎨</div>
+                            <h3 class="text-3xl font-bold mb-4">Digital Marketing</h3>
+                            <p class="text-neutral-400 text-base leading-relaxed">Campaigns that fill seats and grow
+                                delivery orders. Instagram, TikTok, and promo strategies that work.</p>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 text-sm text-neutral-500 group-hover:text-yellow-400 transition-colors">
+                            <span>Learn more</span>
+                            <span class="group-hover:translate-x-2 transition-transform">→</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Service 2 -->
-                <div
-                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
-                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">📸
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Food Photography</h3>
-                        <p class="text-neutral-400 text-sm">Mouth-watering content for your site and socials. We make
-                            your food look as good as it tastes.</p>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div
-                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
-                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">⚡
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Growth Tools</h3>
-                        <p class="text-neutral-400 text-sm">Review automation, QR codes, and dashboards to track your
-                            kitchen's performance.</p>
-                    </div>
-                </div>
-                <!-- Service 4 -->
-                <div
-                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
-                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">🎨
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Brand Identity</h3>
-                        <p class="text-neutral-400 text-sm">Logo design, voice, and strategy. We define who you are
-                            before we tell the world.</p>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-                <div
-                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
-                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">📣
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Public Relations</h3>
-                        <p class="text-neutral-400 text-sm">Media, influencers, and tastemakers. We get you seen by the
-                            people who matter.</p>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-                <div
-                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
-                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">📱
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Social Media</h3>
-                        <p class="text-neutral-400 text-sm">Community management and content creation. We turn followers
-                            into regulars.</p>
-                    </div>
-                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="flex justify-center mt-8 gap-2">
+                <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+                <div class="w-2 h-2 rounded-full bg-neutral-700"></div>
+                <div class="w-2 h-2 rounded-full bg-neutral-700"></div>
+                <div class="w-2 h-2 rounded-full bg-neutral-700"></div>
             </div>
         </section>
 
@@ -215,42 +231,54 @@
                     <h2 class="reveal-type text-3xl font-bold mb-4">Who we work with.</h2>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
                     <div class="group">
-                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Hospitality</h4>
+                        <h4
+                            class="text-white font-bold mb-4 border-b border-neutral-800 pb-2 group-hover:border-yellow-400 transition-colors">
+                            Hospitality</h4>
                         <ul class="space-y-2 text-sm text-neutral-500">
                             <li class="hover:text-white transition-colors cursor-default">Restaurants</li>
                             <li class="hover:text-white transition-colors cursor-default">Bars & Nightclubs</li>
                             <li class="hover:text-white transition-colors cursor-default">Cafes</li>
-                            <li class="hover:text-white transition-colors cursor-default">Multi-unit Concepts</li>
-                            <li class="hover:text-white transition-colors cursor-default">Chefs & Personalities</li>
+                            <li class="hover:text-white transition-colors cursor-default">Cloud Kitchens</li>
                         </ul>
                     </div>
                     <div class="group">
-                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Lifestyle</h4>
+                        <h4
+                            class="text-white font-bold mb-4 border-b border-neutral-800 pb-2 group-hover:border-yellow-400 transition-colors">
+                            Lifestyle</h4>
                         <ul class="space-y-2 text-sm text-neutral-500">
                             <li class="hover:text-white transition-colors cursor-default">Hotels & Resorts</li>
                             <li class="hover:text-white transition-colors cursor-default">Spas & Wellness</li>
                             <li class="hover:text-white transition-colors cursor-default">Luxury Travel</li>
-                            <li class="hover:text-white transition-colors cursor-default">Destinations</li>
-                            <li class="hover:text-white transition-colors cursor-default">Wellness Design</li>
                         </ul>
                     </div>
                     <div class="group">
-                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Products</h4>
+                        <h4
+                            class="text-white font-bold mb-4 border-b border-neutral-800 pb-2 group-hover:border-yellow-400 transition-colors">
+                            Products</h4>
                         <ul class="space-y-2 text-sm text-neutral-500">
                             <li class="hover:text-white transition-colors cursor-default">Food Brands (CPG)</li>
                             <li class="hover:text-white transition-colors cursor-default">Beverages</li>
                             <li class="hover:text-white transition-colors cursor-default">Cookbooks</li>
-                            <li class="hover:text-white transition-colors cursor-default">Retail</li>
-                            <li class="hover:text-white transition-colors cursor-default">CBD & Cannabis</li>
                         </ul>
                     </div>
                     <div class="group">
-                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Real Estate</h4>
+                        <h4
+                            class="text-white font-bold mb-4 border-b border-neutral-800 pb-2 group-hover:border-yellow-400 transition-colors">
+                            Branding</h4>
                         <ul class="space-y-2 text-sm text-neutral-500">
-                            <li class="hover:text-white transition-colors cursor-default">Mixed Use Developments</li>
-                            <li class="hover:text-white transition-colors cursor-default">Food Halls</li>
+                            <li class="hover:text-white transition-colors cursor-default">Consumer Goods</li>
+                            <li class="hover:text-white transition-colors cursor-default">Packaging Design</li>
+                            <li class="hover:text-white transition-colors cursor-default">Brand Identity</li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4
+                            class="text-white font-bold mb-4 border-b border-neutral-800 pb-2 group-hover:border-yellow-400 transition-colors">
+                            Events</h4>
+                        <ul class="space-y-2 text-sm text-neutral-500">
+                            <li class="hover:text-white transition-colors cursor-default">Festivals</li>
                             <li class="hover:text-white transition-colors cursor-default">Pop-ups</li>
                             <li class="hover:text-white transition-colors cursor-default">Catering</li>
                         </ul>

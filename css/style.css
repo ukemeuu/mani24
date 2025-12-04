@@ -4,6 +4,7 @@
     --bg-color: #050505;
     --text-color: #f3f4f6;
     --accent-color: #ffffff;
+    --yellow-accent: #ffd618;
 }
 
 html.lenis {
@@ -31,10 +32,21 @@ body {
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-    cursor: none; /* Custom cursor */
 }
 
-h1, h2, h3, h4, h5, h6 {
+@media (min-width: 768px) {
+    body {
+        cursor: none;
+        /* Custom cursor on desktop only */
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -102,8 +114,13 @@ body.hovering .cursor-outline {
 }
 
 @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Image Hover Effect */
@@ -128,4 +145,42 @@ body.hovering .cursor-outline {
 /* Utilities */
 .text-balance {
     text-wrap: balance;
+}
+
+/* Horizontal Scroll for Services */
+.services-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.services-scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.services-track {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.service-card {
+    scroll-snap-align: start;
+}
+
+/* Yellow accent utilities */
+.text-yellow-400 {
+    color: var(--yellow-accent);
+}
+
+.bg-yellow-400 {
+    background-color: var(--yellow-accent);
+}
+
+.border-yellow-400 {
+    border-color: var(--yellow-accent);
 }
