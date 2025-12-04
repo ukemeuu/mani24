@@ -140,3 +140,109 @@ if (servicesContainer && scrollIndicators.length > 0) {
         });
     });
 }
+
+// Enhanced Scroll Animations for New Sections
+
+// Animate problem agitation cards with stagger
+const problemCards = document.querySelectorAll('.animate-stagger-item');
+if (problemCards.length \u003e 0) {
+    gsap.from(problemCards, {
+        y: 60,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: problemCards[0].parentElement,
+            start: 'top 75%',
+        }
+    });
+}
+
+// Animate slide-up elements
+const slideUpElements = document.querySelectorAll('.animate-slide-up');
+slideUpElements.forEach(el => {
+    gsap.from(el, {
+        y: 80,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+        }
+    });
+});
+
+// Animate scale-in elements
+const scaleInElements = document.querySelectorAll('.animate-scale-in');
+scaleInElements.forEach(el => {
+    gsap.from(el, {
+        scale: 0.9,
+        opacity: 0,
+        duration: 1,
+        ease: 'back.out(1.2)',
+        scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+        }
+    });
+});
+
+// Pin "Why Trust Us" section for emphasis
+const trustSection = document.querySelector('.py-32.bg-gradient-to-b.from-neutral-950.to-black');
+if (trustSection) {
+    ScrollTrigger.create({
+        trigger: trustSection,
+        start: 'top top',
+        end: '+=500',
+        pin: false, // Set to true if you want pinning effect
+        scrub: 1,
+    });
+}
+
+// Parallax effect for hero section
+const heroSection = document.querySelector('.min-h-screen.flex.items-center');
+if (heroSection) {
+    gsap.to(heroSection.querySelector('.relative.z-10'), {
+        y: 100,
+        opacity: 0.5,
+        scrollTrigger: {
+            trigger: heroSection,
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1,
+        }
+    });
+}
+
+// Animate RED FLAGS text with bounce
+const redFlagsText = document.querySelector('.text-5xl.md\\:text-6xl.font-bold.text-red-500');
+if (redFlagsText) {
+    gsap.from(redFlagsText, {
+        scale: 0.5,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'elastic.out(1, 0.5)',
+        scrollTrigger: {
+            trigger: redFlagsText,
+            start: 'top 85%',
+        }
+    });
+}
+
+// Smooth reveal for cost awareness section
+const costSection = document.querySelector('.py-24.bg-black.border-y');
+if (costSection) {
+    gsap.from(costSection.querySelector('.p-12.rounded-3xl'), {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: costSection,
+            start: 'top 75%',
+        }
+    });
+}
+
