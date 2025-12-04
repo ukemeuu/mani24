@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mani 24 Studio – Restaurant Digital Studio</title>
+    <meta name="description"
+        content="Digital agency for restaurants. We build websites, tools, and content that drive bookings." />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-white selection:text-black">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot hidden md:block"></div>
+    <div class="cursor-outline hidden md:block"></div>
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-b border-transparent py-4">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+            <a href="#" class="flex items-center gap-2 group">
+                <div
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 bg-neutral-900 text-xs font-bold tracking-widest group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                    M24
+                </div>
+                <span class="text-sm font-bold uppercase tracking-widest hidden sm:block">Mani 24 Studio</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="#tools" class="hover:text-white transition-colors">Tools</a>
+                <a href="#contact"
+                    class="rounded-full border border-white/20 px-6 py-2 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300">
+                    Let’s Talk
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-900/40 via-black to-black z-0">
+            </div>
+
+            <div class="mx-auto max-w-7xl px-6 relative z-10 text-center">
+                <p class="fade-up text-xs font-bold uppercase tracking-[0.4em] text-neutral-500 mb-6">
+                    Digital for Hospitality
+                </p>
+                <h1 class="reveal-type text-5xl md:text-8xl font-bold leading-tight tracking-tight mb-8">
+                    We build engines<br>
+                    <span class="text-neutral-500">not just websites.</span>
+                </h1>
+                <p class="fade-up max-w-2xl mx-auto text-lg text-neutral-400 mb-10 text-balance">
+                    Beautiful food photography, seamless ordering, and custom tools that keep your tables booked 24/7.
+                </p>
+
+                <div class="fade-up flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact"
+                        class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-bold text-black transition-all hover:bg-neutral-200">
+                        <span class="relative z-10">Book Discovery Call</span>
+                    </a>
+                    <a href="#work"
+                        class="text-sm text-neutral-400 hover:text-white transition-colors underline decoration-neutral-700 underline-offset-4">
+                        View our work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RED FLAGS (Problem Agitation) -->
+        <section class="py-24 border-t border-neutral-900">
+            <div class="mx-auto max-w-7xl px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div class="sticky top-32">
+                        <h2 class="reveal-type text-4xl md:text-5xl font-bold leading-tight mb-6">
+                            Is your website <br>
+                            <span class="text-red-500">losing you money?</span>
+                        </h2>
+                        <p class="fade-up text-neutral-400 text-lg">
+                            If you're still using a generic template with a PDF menu, you're leaving orders on the
+                            table.
+                        </p>
+                    </div>
+
+                    <div class="space-y-12">
+                        <div class="fade-up group">
+                            <span class="text-red-500 text-xs font-bold uppercase tracking-widest">01. The PDF
+                                Menu</span>
+                            <h3
+                                class="text-2xl font-bold mt-2 mb-2 group-hover:translate-x-2 transition-transform duration-300">
+                                Impossible to read on mobile.</h3>
+                            <p class="text-neutral-500">Customers hate pinching and zooming. They just want to order.
+                            </p>
+                        </div>
+                        <div class="fade-up group">
+                            <span class="text-red-500 text-xs font-bold uppercase tracking-widest">02. The "Call to
+                                Order"</span>
+                            <h3
+                                class="text-2xl font-bold mt-2 mb-2 group-hover:translate-x-2 transition-transform duration-300">
+                                Your phone line is busy.</h3>
+                            <p class="text-neutral-500">If they can't click to order or book instantly, they go to your
+                                competitor.</p>
+                        </div>
+                        <div class="fade-up group">
+                            <span class="text-red-500 text-xs font-bold uppercase tracking-widest">03. The Generic
+                                Look</span>
+                            <h3
+                                class="text-2xl font-bold mt-2 mb-2 group-hover:translate-x-2 transition-transform duration-300">
+                                Looks like a template.</h3>
+                            <p class="text-neutral-500">Your food is unique. Your website shouldn't look like a dental
+                                clinic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES (Marquee Style or Grid) -->
+        <section id="services" class="py-32 bg-neutral-950">
+            <div class="mx-auto max-w-7xl px-6 mb-16">
+                <p class="fade-up text-xs font-bold uppercase tracking-[0.4em] text-neutral-500 mb-4">Services</p>
+                <h2 class="reveal-type text-4xl md:text-6xl font-bold">Everything you need.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-1 px-1">
+                <!-- Service 1 -->
+                <div
+                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
+                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">🌐
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Custom Websites</h3>
+                        <p class="text-neutral-400 text-sm">No templates. Built for speed, SEO, and conversion.
+                            Integrated with your POS and delivery apps.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
+                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">📸
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Food Photography</h3>
+                        <p class="text-neutral-400 text-sm">Mouth-watering content for your site and socials. We make
+                            your food look as good as it tastes.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
+                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">⚡
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Growth Tools</h3>
+                        <p class="text-neutral-400 text-sm">Review automation, QR codes, and dashboards to track your
+                            kitchen's performance.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div
+                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
+                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">🎨
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Brand Identity</h3>
+                        <p class="text-neutral-400 text-sm">Logo design, voice, and strategy. We define who you are
+                            before we tell the world.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div
+                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
+                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">📣
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Public Relations</h3>
+                        <p class="text-neutral-400 text-sm">Media, influencers, and tastemakers. We get you seen by the
+                            people who matter.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div
+                    class="fade-up group relative h-[400px] bg-neutral-900/50 border border-neutral-800 p-8 flex flex-col justify-between hover:bg-neutral-900 transition-colors duration-500">
+                    <div class="text-4xl mb-4 opacity-20 group-hover:opacity-100 transition-opacity duration-500">📱
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Social Media</h3>
+                        <p class="text-neutral-400 text-sm">Community management and content creation. We turn followers
+                            into regulars.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDUSTRIES -->
+        <section id="industries" class="py-24 border-t border-neutral-900">
+            <div class="mx-auto max-w-7xl px-6">
+                <div class="mb-12">
+                    <h2 class="reveal-type text-3xl font-bold mb-4">Who we work with.</h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="group">
+                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Hospitality</h4>
+                        <ul class="space-y-2 text-sm text-neutral-500">
+                            <li class="hover:text-white transition-colors cursor-default">Restaurants</li>
+                            <li class="hover:text-white transition-colors cursor-default">Bars & Nightclubs</li>
+                            <li class="hover:text-white transition-colors cursor-default">Cafes</li>
+                            <li class="hover:text-white transition-colors cursor-default">Multi-unit Concepts</li>
+                            <li class="hover:text-white transition-colors cursor-default">Chefs & Personalities</li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Lifestyle</h4>
+                        <ul class="space-y-2 text-sm text-neutral-500">
+                            <li class="hover:text-white transition-colors cursor-default">Hotels & Resorts</li>
+                            <li class="hover:text-white transition-colors cursor-default">Spas & Wellness</li>
+                            <li class="hover:text-white transition-colors cursor-default">Luxury Travel</li>
+                            <li class="hover:text-white transition-colors cursor-default">Destinations</li>
+                            <li class="hover:text-white transition-colors cursor-default">Wellness Design</li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Products</h4>
+                        <ul class="space-y-2 text-sm text-neutral-500">
+                            <li class="hover:text-white transition-colors cursor-default">Food Brands (CPG)</li>
+                            <li class="hover:text-white transition-colors cursor-default">Beverages</li>
+                            <li class="hover:text-white transition-colors cursor-default">Cookbooks</li>
+                            <li class="hover:text-white transition-colors cursor-default">Retail</li>
+                            <li class="hover:text-white transition-colors cursor-default">CBD & Cannabis</li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-white font-bold mb-4 border-b border-neutral-800 pb-2">Real Estate</h4>
+                        <ul class="space-y-2 text-sm text-neutral-500">
+                            <li class="hover:text-white transition-colors cursor-default">Mixed Use Developments</li>
+                            <li class="hover:text-white transition-colors cursor-default">Food Halls</li>
+                            <li class="hover:text-white transition-colors cursor-default">Pop-ups</li>
+                            <li class="hover:text-white transition-colors cursor-default">Catering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY (Minimal) -->
+        <section class="py-24 bg-neutral-950">
+            <div class="mx-auto max-w-7xl px-6 text-center">
+                <h2 class="reveal-type text-4xl md:text-6xl font-bold mb-16">Our Philosophy</h2>
+
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <div
+                        class="fade-up p-6 border border-neutral-800 rounded-2xl bg-black/50 hover:border-neutral-600 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Hospitality First</h3>
+                        <p class="text-sm text-neutral-400">We practice what we preach. We have been servers, sales
+                            managers, and front desk attendants; we know what it’s like to be on your side of the table.
+                        </p>
+                    </div>
+                    <div
+                        class="fade-up p-6 border border-neutral-800 rounded-2xl bg-black/50 hover:border-neutral-600 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Data Driven</h3>
+                        <p class="text-sm text-neutral-400">Harnessing the power of data-driven analytics, we develop
+                            campaigns using facts and metrics to guide strategic decisions that align with your goals.
+                        </p>
+                    </div>
+                    <div
+                        class="fade-up p-6 border border-neutral-800 rounded-2xl bg-black/50 hover:border-neutral-600 transition-colors">
+                        <h3 class="text-xl font-bold mb-3 text-white">Integrated</h3>
+                        <p class="text-sm text-neutral-400">As a multidisciplinary group of strategists, creators, and
+                            do-ers, we offer a comprehensive range of capabilities to deliver integrated campaigns that
+                            build your business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-32 relative overflow-hidden">
+            <div class="mx-auto max-w-3xl px-6 relative z-10">
+                <div class="text-center mb-12">
+                    <p class="text-xs font-bold uppercase tracking-[0.4em] text-neutral-500 mb-4">Start Now</p>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to fill your tables?</h2>
+                    <p class="text-neutral-400">Book a 15-minute discovery call. No sales pitch, just a chat about your
+                        goals.</p>
+                </div>
+
+                <form class="space-y-6 bg-neutral-900/30 p-8 rounded-3xl border border-neutral-800 backdrop-blur-sm">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-neutral-500">Name</label>
+                            <input type="text"
+                                class="w-full bg-black border border-neutral-800 rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-colors"
+                                placeholder="John Doe">
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-xs font-bold uppercase tracking-wider text-neutral-500">Restaurant</label>
+                            <input type="text"
+                                class="w-full bg-black border border-neutral-800 rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-colors"
+                                placeholder="The Burger Joint">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-wider text-neutral-500">Email</label>
+                        <input type="email"
+                            class="w-full bg-black border border-neutral-800 rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-colors"
+                            placeholder="john@example.com">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-wider text-neutral-500">Goal</label>
+                        <textarea rows="3"
+                            class="w-full bg-black border border-neutral-800 rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-colors"
+                            placeholder="I need more online orders..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-white text-black font-bold py-4 rounded-full hover:bg-neutral-200 transition-colors">
+                        Send Request
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="py-12 border-t border-neutral-900 text-center text-sm text-neutral-500">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+                <div class="flex items-center gap-2">
+                    <span>📍</span>
+                    <span>Riverside Drive, Nairobi</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>✉️</span>
+                    <a href="mailto:mani24studio@gmail.com"
+                        class="hover:text-white transition-colors">mani24studio@gmail.com</a>
+                </div>
+            </div>
+            <p class="text-xs text-neutral-600">&copy; 2024 Mani 24 Studio. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
